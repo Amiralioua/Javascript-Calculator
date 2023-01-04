@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculatrice</title>
+</head>
+
+<style type="text/css">html,body{height: 100%}
+	
+	 body{margin: 50px;
+	      padding: 50px;}
+	      
+	 .calculatrice{height: 350px ;  
+	              width: 250px; 
+	              display: flex;
+	              flex-direction:   column;
+	              gap: 5px;
+	              align-items: center;
+	              justify-items: ;
+	              background-color: #343333;
+	              margin: auto}
+
+	 .lin1{display: flex;
+		  flex-direction: row;
+          gap:5px;} 
+
+	 .lin2{display: flex;
+		  flex-direction: row;
+		  gap:5px;}
+
+	 .lin3{display: flex;
+		  flex-direction: row;
+		  gap:5px;}
+
+	 .lin4{display: flex;
+		   flex-direction: row;
+		   gap:5px;}
+
+	 .lin5{display: flex;
+		   flex-direction: row;
+		   gap:5px;}				             
+   
+	 .button { height: 50px ;  
+	           width:   50px;
+               -moz-border-radius : 6px;
+               -webkit-border-radius :6px;
+               border-radius : 6px;} 
+
+
+	.resulta{height: 50px; width: 205px;
+		     margin-top: 10px;} 
+	#zero{background-color: #DF6F92;}
+	#eq{background-color: #6694CE;}
+
+</style>
+<body>
+ 
+<div  class="calculatrice">
+ 	 <div  >
+ 	 	<form name="f">
+	 	 
+	 	<label for="input_id"></label> 
+	  <input  class="resulta" id="resul" type="text" name="r">
+	   
+	 </div>
+
+	 <div class="lin1"> 
+	 	<button class="button">
+	 		
+	 	</button>
+	 	<button class="button">
+	 		
+	 	</button>
+	 	<button   class="button" type="reset"   id="zero" onclick="d('0')">CE
+	 		
+	 	</button>
+	 	</form>
+	 	<button class="button"  id="sl " onclick="d('/ ')">/
+	 		
+	 	</button>
+	 	
+	 </div>
+	 
+	 <div class="lin2"> 
+	 	<button class="button"  id="cet" onclick="d('7')">7
+	 		
+	 	</button>
+	 	<button class="button"  id="wit" onclick="d('8')">8
+	 		
+	 	</button>
+	 	<button class="button"  id="nef" onclick="d('9')">9
+	 		
+	 	</button>
+	 	<button class="button"  id="etoil" onclick="d('*')">*
+	 		
+	 	</button>
+	 	
+	  </div>	
+
+	  <div class="lin3"> 
+	 	<button class="button"  id="qat" onclick="d('4')">4
+	 		
+	 	</button>
+	 	<button class="button"  id="sinq" onclick="d('5')">5
+	 		
+	 	</button>
+	 	<button class="button"  id="si" onclick="d('6')">6
+	 		
+	 	</button>
+	 	<button class="button"  id="moin" onclick="d('-')">-
+	 		
+	 	</button>
+	 	
+	  </div>
+	  <div class="lin4">
+	  <button class="button"  id=" un" onclick="d('1')">1
+	 		
+	 	</button>
+	 	<button class="button" id="deux" onclick="d('2')">2
+	 		
+	 	</button>
+	 	<button class="button"  id="trois" onclick="d('3')">3
+	 		
+	 	</button>
+	 	<button class="button"  id="plus" onclick="d('+')">+
+	 		
+	 	</button> 
+	 	
+	  </div>	
+	  <div class="lin5">
+	  <button class="button">
+	 		
+	 	</button>
+	 	<button class="button" id="z" onclick="d('0')">0
+	 		
+	 	</button>
+	 	<button class="button"id="point" onclick="d('.')">.
+	 		
+	 	</button>
+	 	<button class="button" id="eq" onclick="calculate()">=
+	 		
+	 	</button> 
+	 	 
+	 </div>
+	 
+
+	 <script type="text/javascript">
+	 	 
+	 	function d(x) {
+	 		 document.f.r.value= document.f.r.value+x;
+	 	}
+
+	 	function calculate(){resul.value=eval( resul.value);}
+
+
+	 	 
+	 	
+	 	
+
+	 </script>
+
+
+</div>
+   
+</body>
+</html>
